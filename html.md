@@ -356,4 +356,161 @@ HTML tables allow web developers to arrange data into rows and columns.
 
     
 
-- 
+- **Table rowspan colspan**
+
+  ```html
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <h2>Cell that spans two rows</h2>
+  <p>To make a cell span more than one row, use the rowspan attribute.</p>
+  
+  <table style="width:100%">
+    <tr>
+      <th>Name</th>
+      <td>Jill</td>
+    </tr>
+    <tr>
+      <th rowspan="2">Phone</th>
+      <td>555-1234</td>
+    </tr>
+    <tr>
+      <td>555-8745</td>
+    </tr>
+  </table>
+  </body>
+  </html>
+  
+  
+  ```
+
+  
+
+#### HTML Lists
+
+- **Unorder list** - An unordered list starts with the `<ul>` tag. Each list item starts with the `<li>` tag. 
+
+  - | disc   | Sets the list item marker to a bullet (default) |
+    | ------ | ----------------------------------------------- |
+    | circle | Sets the list item marker to a circle           |
+    | square | Sets the list item marker to a square           |
+    | none   | The list items will not be marked               |
+
+  ```html
+  <ul style="list-style-type:disc;">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul> 
+  ```
+
+  ```html
+  <!DOCTYPE html>
+  <html>
+  <body>
+  
+  <h2>A Nested List</h2>
+  <p>Lists can be nested (list inside list):</p>
+  
+  <ul>
+    <li>Coffee</li>
+    <li>Tea
+      <ul>
+        <li>Black tea</li>
+        <li>Green tea</li>
+      </ul>
+    </li>
+    <li>Milk</li>
+  </ul>
+  
+  </body>
+  </html>
+  
+  
+  ```
+
+  
+
+- **Order list** - An ordered list starts with the `<ol>` tag. Each list item starts with the `<li>` tag.
+
+  ```html
+  <ol type="1" start="50">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+  ```
+
+  | Type     | Description                                                  |
+  | :------- | :----------------------------------------------------------- |
+  | type="1" | The list items will be numbered with numbers (default)       |
+  | type="A" | The list items will be numbered with uppercase letters       |
+  | type="a" | The list items will be numbered with lowercase letters       |
+  | type="I" | The list items will be numbered with uppercase roman numbers |
+  | type="i" | The list items will be numbered with lowercase roman numbers |
+
+  
+
+- **Description list** - 
+
+  A description list is a list of terms, with a description of each term.
+
+  The `<dl>` tag defines the description list, the `<dt>` tag defines the term (name), and the `<dd>` tag describes each term
+
+  ```html
+  <dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+  </dl>
+  ```
+
+  
+
+#### HTML DIV
+
+The `<div>` element is used as a container for other HTML elements.
+
+```html
+<!DOCTYPE html>
+<html>
+<style>
+div {
+  background-color: #FFF4A3;
+}
+</style>
+<body>
+
+<h1>HTML DIV Example</h1>
+
+<div>
+  <h2>London</h2>
+  <p>London is the capital city of England.</p>
+  <p>London has over 13 million inhabitants.</p>
+</div>
+
+<p>The yellow background is added to demonstrate the footprint of the DIV element.</p>
+
+</body>
+</html>
+```
+
+
+
+#### HTML Iframe
+
+An HTML iframe is used to display a web page within a web page.
+
+```html
+<iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe>
+```
